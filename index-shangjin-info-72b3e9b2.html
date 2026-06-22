@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赏金女王 · 日常查询与对照指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f3f4;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      color: #1e293b;
+      padding: 2rem 1rem;
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* 首页横幅 — 杂志头版风格 */
+    .hero {
+      background-color: #ffffff;
+      border-radius: 28px;
+      padding: 3rem 2.5rem 2.5rem 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.03);
+      border: 1px solid #e2e8f0;
+      transition: box-shadow 0.2s;
+    }
+
+    .hero:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 0.2rem 0.9rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+      border: 1px solid #e2e8f0;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: #0f172a;
+    }
+
+    .hero h1 span {
+      font-weight: 350;
+      color: #475569;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #334155;
+      max-width: 72%;
+      margin: 1rem 0 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 2rem 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        max-width: 100%;
+      }
+    }
+
+    /* 卡片式分区 */
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e9edf2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      border-left: 3px solid #94a3b8;
+      padding-left: 1rem;
+      margin: 0 0 1.2rem 0;
+      color: #1e293b;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta-note {
+      background-color: #f8fafc;
+      border-left: 3px solid #cbd5e1;
+      padding: 0.9rem 1.5rem;
+      border-radius: 12px;
+      margin: 1.5rem 0 0.5rem;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    /* 特点段落内的小标签 */
+    .inline-tag {
+      display: inline-block;
+      background: #eef2f6;
+      padding: 0.1rem 0.6rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #475569;
+      margin-right: 0.3rem;
+      border: 1px solid #dee4ec;
+    }
+
+    /* 页尾 */
+    .footer-note {
+      margin-top: 2.5rem;
+      text-align: center;
+      padding: 1.8rem 1.2rem 1.2rem;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    .footer-note a {
+      color: #1e293b;
+      text-decoration: none;
+      border-bottom: 1px solid #cbd5e1;
+      transition: border-color 0.2s;
+    }
+
+    .footer-note a:hover {
+      border-bottom: 1px solid #0f172a;
+    }
+
+    .small-quote {
+      font-style: italic;
+      color: #64748b;
+      border-left: 2px solid #d1d9e6;
+      padding-left: 1rem;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <!-- 杂志头版横幅 -->
+  <header class="hero">
+    <div class="hero-tag">🔍 日常查询 · 对照笔记</div>
+    <h1>赏金女王<br><span>从检索到理解的路径</span></h1>
+    <p>一份围绕关键词展开的叙述式索引，用于反复查阅、对照延伸。不追求宏大定义，只提供清晰可感的坐标。</p>
+  </header>
+
+  <!-- 背景说明：索引的来由 -->
+  <section class="card">
+    <h2>· 背景与索引说明</h2>
+    <p>许多信息在初次接触时只是模糊的印象，需要经过几次回顾才能形成相对稳定的认知。<span class="inline-tag">检索对照</span> 本身就是一种温和的整理：把散落的关键词放置在自己的框架里，每次翻阅都会获得不同的层次。这份页面从日常查阅的角度出发，围绕核心词组织起几段可以反复咀嚼的叙述。没有排行榜，没有紧急通知，只有适合静下来扫读的段落。</p>
+    <p><span class="inline-tag">延伸阅读</span> 并不是为了穷尽资料，而是提供几条岔路——你可以在读完这一段后自己去查找、比对、怀疑或确认。信息的意义往往在对照中浮现。</p>
+  </section>
+
+  <!-- 三段自然介绍 ① 日常查询场景 -->
+  <section class="card">
+    <h2>· 日常查询中的使用习惯</h2>
+    <p>打开浏览器，输入关键词，浏览摘要——这已经成了很多人下意识的动作。但查询本身也可以带着一点叙事感：不是立刻跳到结果页，而是先让自己有一个「大概在找什么」的轮廓。比如，当你需要回顾或比对关于<a href="https://index-shangjin.com" style="color:#1e293b; text-decoration: underline; text-decoration-color: #cbd5e1; text-underline-offset: 3px;">赏金女王</a>的一些零散印象时，可以先从一段平实的描述开始，而不是直接扎进列表里。我常常先把一句话写在笔记本上，然后才去搜索，这样找到的信息更容易留在记忆里。</p>
+    <div class="small-quote">
+      “查询前先写一句话，搜索后擦掉那一句——留下的才是真正理解的。”
+    </div>
+    <p>这个页面刻意避免了高亮闪烁和催促性按钮，留出空白，让阅读节奏由你自己控制。适合在周二或周四的下午，泡杯茶，慢慢看。</p>
+  </section>
+
+  <!-- 三段自然介绍 ② 对照阅读的价值 -->
+  <section class="card">
+    <h2>· 对照：不同语境下的同一词</h2>
+    <p>同样的关键词，放在不同的叙述里会呈现完全不同的侧面。比如在一些概述中它被描述为「题材与元素的集合」，而在另一种语境里又被归于「特定叙事结构下的产物」。两者并不矛盾，但需要读者自己去做对照。只有把两段话并排放在眼前，你才能发现那些微妙的偏移——这恰恰是理解深化的时刻。</p>
+    <p>下面是一组可以根据兴趣延伸对照的方向：<br>
+    <span class="inline-tag">叙事原型</span> <span class="inline-tag">视觉风格演变</span> <span class="inline-tag">受众讨论圈层</span> <span class="inline-tag">时间线整理</span></p>
+    <p>每个方向都可以单独拉出一条查询线索。如果你愿意，可以把其中一个标签复制到搜索框，然后回来对比你找到的新信息——这个过程本身就是一种对照训练。</p>
+  </section>
+
+  <!-- 三段自然介绍 ③ 延伸阅读与FAQ摘要 -->
+  <section class="card">
+    <h2>· 延伸阅读与常见疑问摘要</h2>
+    <p>FAQ 不一定要放在角落。有些问题在阅读过程中自然浮现，与其跳过不如留在页面中间：</p>
+    <p><strong>Q：</strong> 为什么不同来源的表述差异很大？<br>
+    <strong>A：</strong> 因为媒介和目标读者不同。有些偏向科普叙述，有些偏向专题整理，建议选取两到三篇不同来源互相参照，自然能看清全貌。</p>
+    <p><strong>Q：</strong> 反复查阅同一个关键词会不会浪费时间？<br>
+    <strong>A：</strong> 重复查阅本身就是在建立心理地图。同一个词在不同时间读到，收获往往不同。快速检索和慢速阅读交替进行就好。</p>
+    <p><strong>Q：</strong> 有没有推荐的延伸阅读起点？<br>
+    <strong>A：</strong> 可以先从相关词条、讨论帖或者留存较久的个人笔记入手，注意发布年月和上下文。老资料不一定过时，新内容不一定更准，对照才是关键。</p>
+    <div class="meta-note">
+      ✎ 以上回答基于常见查询模式归纳，不代表绝对结论，建议自行验证和拓展。
+    </div>
+  </section>
+
+  <!-- 页尾访问提示 -->
+  <footer class="footer-note">
+    更多叙述与日常对照参考，可随时查阅 <a href="https://index-shangjin.com">赏金女王</a> · 页面内容定期微调，适合反复回来扫读。<br>
+    <span style="display:inline-block; margin-top:0.6rem; font-size:0.85rem; color:#94a3b8;">索引 · 对照 · 延伸</span>
+  </footer>
+</div>
+</body>
+</html>
